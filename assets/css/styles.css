@@ -148,6 +148,11 @@ time \{\
   font-size: 0.9rem;\
 \}\
 \
+.cursor {
+  margin-left: 0.25em;
+  opacity: 0.8;
+}
+
 /* ---------- Footer ---------- */\
 footer \{\
   border-top: 1px solid var(--border);\
