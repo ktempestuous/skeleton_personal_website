@@ -1,0 +1,135 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs24 \cf0 \expnd0\expndtw0\kerning0
+/* =========================================================\
+   SUSTAINABLE BASE STYLES\
+   - System fonts only (no external requests)\
+   - Dark mode by default\
+   - Light mode via prefers-color-scheme\
+   - Small, readable, beginner-friendly\
+   ========================================================= */\
+\
+/* ---------- CSS Variables ---------- */\
+:root \{\
+  /* Dark mode (default) */\
+  --bg: #0f1211;\
+  --text: #e6e6e6;\
+  --muted: #a0a0a0;\
+  --accent: #4caf7a;\
+  --border: #2a2a2a;\
+\
+  --max-width: 60rem;\
+\}\
+\
+/* Light mode for users who prefer it */\
+@media (prefers-color-scheme: light) \{\
+  :root \{\
+    --bg: #ffffff;\
+    --text: #1a1a1a;\
+    --muted: #555555;\
+    --accent: #0a6b3d;\
+    --border: #dddddd;\
+  \}\
+\}\
+\
+/* ---------- Base reset ---------- */\
+*,\
+*::before,\
+*::after \{\
+  box-sizing: border-box;\
+\}\
+\
+/* ---------- Page base ---------- */\
+body \{\
+  margin: 0;\
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;\
+  line-height: 1.6;\
+  background-color: var(--bg);\
+  color: var(--text);\
+\}\
+\
+/* ---------- Skip link (accessibility) ---------- */\
+.skip-link \{\
+  position: absolute;\
+  left: -9999px;\
+\}\
+\
+.skip-link:focus \{\
+  left: 1rem;\
+  top: 1rem;\
+  background: var(--accent);\
+  color: #000;\
+  padding: 0.5rem;\
+  text-decoration: none;\
+  z-index: 1000;\
+\}\
+\
+/* ---------- Layout ---------- */\
+header,\
+main,\
+footer \{\
+  max-width: var(--max-width);\
+  margin: auto;\
+  padding: 1.25rem;\
+\}\
+\
+/* ---------- Navigation ---------- */\
+nav ul \{\
+  display: flex;\
+  gap: 1rem;\
+  list-style: none;\
+  padding: 0;\
+  margin: 0.5rem 0 0;\
+\}\
+\
+nav a \{\
+  color: var(--accent);\
+  text-decoration: none;\
+\}\
+\
+nav a:hover \{\
+  text-decoration: underline;\
+\}\
+\
+nav a:focus-visible \{\
+  outline: 2px solid var(--accent);\
+  outline-offset: 2px;\
+\}\
+\
+/* ---------- Headings ---------- */\
+h1, h2, h3 \{\
+  line-height: 1.3;\
+\}\
+\
+/* ---------- Content ---------- */\
+article \{\
+  margin-bottom: 2.5rem;\
+\}\
+\
+time \{\
+  color: var(--muted);\
+  font-size: 0.9rem;\
+\}\
+\
+/* ---------- Footer ---------- */\
+footer \{\
+  border-top: 1px solid var(--border);\
+  margin-top: 3rem;\
+  font-size: 0.9rem;\
+  color: var(--muted);\
+\}\
+\
+/* ---------- Reduced motion ---------- */\
+@media (prefers-reduced-motion: reduce) \{\
+  * \{\
+    animation: none !important;\
+    transition: none !important;\
+  \}\
+\}\
+}
