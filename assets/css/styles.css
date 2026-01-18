@@ -1,0 +1,139 @@
+/* =========================================================
+   SUSTAINABLE BASE STYLES (Typewriter look)
+   - No external fonts (system monospace only)
+   - White on black
+   - Centered content, responsive text sizing
+   - Works with JS disabled
+   ========================================================= */
+
+:root {
+  --bg: #000000;
+  --text: #ffffff;
+  --muted: #cccccc;
+  --border: #222222;
+
+  /* Keep line length comfortable for reading */
+  --max-width: 42rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+
+  /* Typewriter-style system monospace stack (no downloads) */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  line-height: 1.7;
+
+  background: var(--bg);
+  color: var(--text);
+
+  /* Center the .page block in the viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* breathing room on very small screens */
+  padding: 1.25rem;
+}
+
+/* Accessibility: skip link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--text);
+  color: var(--bg);
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+/* The centered page container */
+.page {
+  width: 100%;
+  max-width: var(--max-width);
+  text-align: center;
+}
+
+/* Headings */
+h1 {
+  margin: 0 0 1rem;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+
+  /* Responsive sizing */
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+/* Paragraph */
+p {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  font-size: clamp(1rem, 2.4vw, 1.25rem);
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding: 0.15rem 0.1rem;
+}
+
+nav a:hover {
+  border-bottom-color: var(--text);
+}
+
+nav a:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+/* Cursor block */
+.cursor {
+  margin-left: 0.25em;
+  opacity: 0.9;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* Reduced motion (green + accessible default) */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
