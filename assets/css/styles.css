@@ -293,3 +293,17 @@ nav a:focus-visible {
 .site-main article a:focus {
   text-decoration: underline;
 }
+
+/* ============================
+   Contact page links
+   ============================ */
+
+.contact-methods a {
+  color: inherit;          /* makes links white */
+  text-decoration: none;
+}
+
+.contact-methods a:hover,
+.contact-methods a:focus {
+  text-decoration: underline;
+}
