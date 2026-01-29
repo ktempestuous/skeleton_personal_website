@@ -267,3 +267,11 @@ nav a:focus-visible {
   line-height: 1;
 }
 
+/* ============================
+   Carbon footprint note
+   ============================ */
+
+.carbon-note {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
