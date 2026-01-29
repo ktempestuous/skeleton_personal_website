@@ -307,3 +307,27 @@ nav a:focus-visible {
 .contact-methods a:focus {
   text-decoration: underline;
 }
+
+/* ============================
+   Profile links (About page)
+   ============================ */
+
+.profile-links {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+}
+
+.scholar-link {
+  margin: 0.4rem 0 0;
+}
+
+.scholar-link a {
+  color: #6fb6e8; /* same baby blue as LinkedIn */
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.scholar-link a:hover,
+.scholar-link a:focus {
+  text-decoration: underline;
+}
