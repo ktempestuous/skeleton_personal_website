@@ -231,41 +231,8 @@ nav a:focus-visible {
 }
 
 /* ============================
-   Social link (LinkedIn)
+   LinkedIn link (About page)
    ============================ */
-
-.site-header {
-  position: relative;
-}
-
-.social-link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 0;
-}
-
-.social-link a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-size: 0.875rem;
-  color: inherit;
-  text-decoration: none;
-}
-
-.social-link a:hover,
-.social-link a:focus {
-  text-decoration: underline;
-}
-
-.social-icon {
-  font-weight: bold;
-  border: 1px solid currentColor;
-  border-radius: 0.25rem;
-  padding: 0.1rem 0.3rem;
-  line-height: 1;
-}
 
 .linkedin-link {
   margin: 1.5rem 0 2rem;
@@ -273,7 +240,10 @@ nav a:focus-visible {
 }
 
 .linkedin-link a {
-  color: #9fd3ff; /* soft baby blue */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #9fd3ff; /* baby blue */
   text-decoration: none;
   font-size: 0.95rem;
 }
@@ -282,6 +252,15 @@ nav a:focus-visible {
 .linkedin-link a:focus {
   text-decoration: underline;
 }
+
+.linkedin-icon {
+  font-weight: bold;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.35rem;
+  line-height: 1;
+}
+
 
 /* ============================
    Carbon footprint note
