@@ -229,3 +229,41 @@ nav a:focus-visible {
 .site-main article h2 a:focus {
   text-decoration: underline;
 }
+
+/* ============================
+   Social link (LinkedIn)
+   ============================ */
+
+.site-header {
+  position: relative;
+}
+
+.social-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+}
+
+.social-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-link a:hover,
+.social-link a:focus {
+  text-decoration: underline;
+}
+
+.social-icon {
+  font-weight: bold;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.3rem;
+  line-height: 1;
+}
+
