@@ -267,6 +267,22 @@ nav a:focus-visible {
   line-height: 1;
 }
 
+.linkedin-link {
+  margin: 1.5rem 0 2rem;
+  text-align: center;
+}
+
+.linkedin-link a {
+  color: #9fd3ff; /* soft baby blue */
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.linkedin-link a:hover,
+.linkedin-link a:focus {
+  text-decoration: underline;
+}
+
 /* ============================
    Carbon footprint note
    ============================ */
@@ -274,4 +290,27 @@ nav a:focus-visible {
 .carbon-note {
   font-size: 0.875rem;
   margin-top: 0.5rem;
+}
+
+.carbon-note a {
+  color: inherit;
+}
+
+.carbon-note a:hover,
+.carbon-note a:focus {
+  text-decoration: underline;
+}
+
+
+/* ============================
+   Article navigation links
+   ============================ */
+
+.site-main article a {
+  color: inherit;
+}
+
+.site-main article a:hover,
+.site-main article a:focus {
+  text-decoration: underline;
 }
