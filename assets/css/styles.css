@@ -331,3 +331,8 @@ nav a:focus-visible {
 .scholar-link a:focus {
   text-decoration: underline;
 }
+
+.paper-icon {
+  margin-right: 0.4rem;
+  font-size: 0.95em;
+}
