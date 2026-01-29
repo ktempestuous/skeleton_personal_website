@@ -157,8 +157,7 @@ nav a:focus-visible {
 .cv-timeline-list {
   list-style: none;
   margin: 0;
-  padding-left: 1.5rem; /* space for the line + dots */
-  border-left: 2px solid currentColor;
+  padding: 0;
 }
 
 /* Each item sits on the vertical line */
@@ -171,18 +170,6 @@ nav a:focus-visible {
 /* Last item doesn’t need extra spacing at the bottom */
 .cv-item:last-child {
   padding-bottom: 0;
-}
-
-/* Dot that marks each point on the timeline */
-.cv-item::before {
-  content: "";
-  position: absolute;
-  left: -0.85rem;  /* aligns the dot with the vertical line */
-  top: 0.4em;
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 999px;
-  background: currentColor;
 }
 
 /* Metadata line (dates) */
@@ -214,4 +201,15 @@ nav a:focus-visible {
   margin: 0;
   max-width: 40rem; /* prevents overly long lines on wide screens */
   line-height: 1.4;
+}
+
+/* Optional: subtle hover on roles */
+.cv-item-role:hover {
+  text-decoration: underline;
+}
+
+/* Optional: soft separation */
+.cv-item + .cv-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 1.5rem;
 }
