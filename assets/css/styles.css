@@ -213,3 +213,19 @@ nav a:focus-visible {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 1.5rem;
 }
+
+/* ============================
+   Blog article links
+   ============================ */
+
+/* Make blog titles inherit text color instead of default blue */
+.site-main article h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Optional: subtle hover state */
+.site-main article h2 a:hover,
+.site-main article h2 a:focus {
+  text-decoration: underline;
+}
