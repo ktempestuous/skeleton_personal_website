@@ -299,7 +299,7 @@ nav a:focus-visible {
    ============================ */
 
 .contact-methods a {
-  color: inherit;          /* makes links white */
+  color: #9fd3ff; /* baby blue */
   text-decoration: none;
 }
 
