@@ -1,5 +1,5 @@
 # Lightweight Personal Website Template
-## Author: Kirsten Tempest
+### Author: Kirsten Tempest
 
 This repository contains a **lightweight, sustainability-first HTML template** for a personal or professional website.
 
@@ -70,4 +70,4 @@ You are free to reuse, adapt, and modify this template for personal or professio
 
 If you improve it in a way that benefits others, consider sharing those improvements back.
 
-And if you use this template, I (Kirsten) would love to hear from you! :)
+And if you use this template, I (Kirsten) would love to hear from you! (Contact found at kirstentempest.com) :)
